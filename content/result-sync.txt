@@ -1,0 +1,2 @@
+e go be e go be
+Here is the result: Hello from first text file and Hello from second fileHere is the result: Hello from first text file and Hello from second file
