@@ -1,22 +1,13 @@
 const http = require("http");
 
 const server = http.createServer((req, res) => {
-  // req- incoming request from client
-  // res - what we're sending back to the client
-
   if (req.url === "/") {
-    res.end("Welcome to our home page");
+    res.end("welcome home boy")
   } else if (req.url === "/about") {
-    res.end("Welcome to our about page");
-  } else {
-    res.end(
-      `
-    <h1>You seem lost</h1>
-    <p>Luckily we can help you find your way</p>
-    <a href="/">Go Home</a>
-    `
-    );
-  }
+    res.end(`Here's what we do`)
+  } else { 
+    res.end(`<a href="/">Go back home</a>`);
+  } 
 });
 
 server.listen(2023);
