@@ -3,9 +3,11 @@
 
 const { john, jane } = require("./4_names");
 const sayHi = require("./5_utils");
-const data = require("./6_alt_flavor");
+const obj = require("./6_alt_flavor");
+const [name1, name2] = obj.items;
 require("./7_mind_grenade");
-console.log(data);
+console.log(name1, name2);
+
 
 sayHi("Henry");
 sayHi(john);
